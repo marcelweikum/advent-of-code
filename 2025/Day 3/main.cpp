@@ -55,12 +55,6 @@ int main() {
     // --------------------- PART 2 ---------------------
     while(getline (MyReadFile, myText)) {
         
-        // Check if the line is long enough to extract 12 digits
-        if (myText.length() < 12) {
-            cout << "Line too short!" << endl;
-            continue;
-        }
-
         int currentSearchIdx = 0;
         int digitsNeeded = 12;
         collector.clear();
